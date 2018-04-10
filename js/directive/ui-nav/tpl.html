@@ -1,0 +1,55 @@
+<style>
+	.navbar {
+	    background-color: #fff;
+	}
+</style>
+<nav class="navbar navbar-default navs nav-all" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header logo">
+			<img src="img/logo_bg.png" alt="" style="float: left;">
+			<p style="float: left;">本科教务系统</p>
+			
+			<div style="float: left;width: 110px; padding: 0 0 0 20px;margin-top: 10px;">
+				<a ng-click="jumpToPublicElectiveCourse()" href="javascript:void(0)">
+					<font style="font-size:20px;font-weight:bold;color: #fff;">校公选课</font>
+				</a>
+			</div>
+			<div style="float: left;width: 120px; padding: 0 0 0 16px;margin-top: 10px;">
+				<a ng-click="jumpToDeptElectiveCourse()" href="javascript:void(0)">
+					<font style="font-size:20px;font-weight:bold;color: #fff;">院系选修课</font>
+				</a>
+			</div>
+			<div style="float: left;width: 110px; padding: 0 0 0 20px;margin-top: 10px;">
+				<a ng-click="jumpToPhysicalEducationClass()" href="javascript:void(0)">
+					<font style="font-size:20px;font-weight:bold;color: #fff;">体育课</font>
+				</a>
+			</div>
+		</div>
+		<ul class="nav navbar-nav navbar-right fr">
+			<li>
+				<a ng-click="switchIndexPage()" href="javascript:void(0)"><img src="img/home.png"></a>
+			</li>
+			<li class="admin">
+				<img src="img/user.png" class="img-circle">
+				<span>{{user.name}}</span>
+			</li>
+			<li class="sl">
+				<a href="javascript:;" ng-click="showHideHelpList()" class="helpListA"><img src="img/help.png"></a>
+				<!--<ul class="studentList" ng-hide="helpList">
+					<li>
+						<a href="{{jwxtURL}}/upload/xsxksc.doc" type="_blank">学生选课帮助手册下载</a>
+					</li>
+				</ul>-->
+			</li>
+			<li>
+				<a href="{{teaJwglxtURL}}/#!/login" ui-sref="logout" id="toLogin"><img src="img/zoom.png"></a>
+			</li>
+		</ul>
+		<iframe id="xkLogOut" style="display: none;"></iframe>
+		<iframe id="qmxfzLogOut" style="display: none;"></iframe>
+		<iframe id="drjwLogOut" style="display: none;"></iframe>
+	</div>
+</nav>
+<div id="footer" class="footer footer3">
+	<p>版权所有<span>&copy;</span>北京电影学院 <span>BEIJING FILE ACADEMY</span></p>
+</div>

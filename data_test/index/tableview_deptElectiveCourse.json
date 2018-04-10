@@ -1,0 +1,22 @@
+{
+	"total": "1",
+	"rows": [
+		{
+			"courseNum": "F001001",
+			"courseName": "JAVA程序设计",
+			"optionalClassNum": "10",
+			"courseType": "专业基础课",
+			"courseProperty": "选修",
+			"openDeptName": "计算机科学与技术",
+			"credit": "2"
+		}, {
+			"courseNum": "F001002",
+			"courseName": "C语言程序设计",
+			"optionalClassNum": "15",
+			"courseType": "专业核心课",
+			"courseProperty": "必修",
+			"openDeptName": "计算机科学与技术",
+			"credit": "2"
+		}
+	]
+}

@@ -1,0 +1,98 @@
+<link rel="stylesheet" href="css/login.css" type="text/css">
+
+<div class="home">
+	<div class="middle">
+		<div class="middle-left">
+			<div class="middle-left-title">
+				<label style="">学生网上选课相关协议</label>
+			</div>
+
+			<div class="middle-left-content">
+				<label style="line-height: 23px;margin: 20px auto -10px auto;">为了更好地安全、便捷的服务学生通过网上进行选课，以下特此声明相关协议：
+				</label>
+				<label style="line-height: 23px;margin: 20px auto -10px auto;">
+					1、确保个人登录密码安全。避免登录的密码过于简单，
+					如学号跟密码一致或密码为：123456等。
+					当密码过于简单时则不能进入选课界面。
+				</label>
+				<label style="">2、一个学生账号同时只能在一台电脑登录。</label>
+				<label style="line-height: 23px;margin: 20px auto -10px auto;">3、当不需要使用时，务必退出或者关闭已打开的页面，以防别人查看或操作相关信息。</label>
+				<label style="line-height: 23px;margin: 20px auto -10px auto;">4、由于网上选课的人数多，课程资源有限，为保证修够响应的学分和课程门数，尽量不要反复退选。</label>
+			</div>
+
+			<div class="middle-left-content-buttom">
+				<input type="checkbox" ng-true-value="'agreement'" ng-false-value="false" ng-model="student.agreement" ng-required="true"/>
+				<label style="">同意上述协议</label>
+			</div>
+
+			<div class="middle-left-buttom-left">
+				<label style="color: #03a9f4;font-size: 26px;">{{chooseInfo.roundName}}</label>
+				<label style="background-color: #FA7B54;color: #ffffff;border-radius: 9px;
+						border: 4px solid #FA7B54;text-align: center;width: 70px;">
+						{{student.situation}}
+				</label>
+				<label style="margin-top: 10px;">选课时间：{{chooseInfo.startTime}}&nbsp;~&nbsp;
+						{{chooseInfo.endTime}}&nbsp;&nbsp;
+						{{chooseInfo.everyDayStartTime}}-{{chooseInfo.everyDayEndTime}}
+				</label><br>
+				<label style="margin-top: 10px;">学年学期：{{chooseInfo.semester}}</label><br>
+				<label style="margin-top: 10px;">选课方式：优先制</label>
+			</div>
+
+			<div class="middle-left-buttom-right">
+				<label class="top-label">距离选课结束还有</label>
+				<div class="center-label" style="">
+					<label class="center-label-top" style="">{{student.day}}</label>
+					<div class="center-label-middle" style=""></div>
+					<label class="center-label-bottom" style="">Days</label>
+				</div>
+				<div class="center-label" style="">
+					<label class="center-label-top" style="">{{student.hour}}</label>
+					<div class="center-label-middle" style=""></div>
+					<label class="center-label-bottom" style="">Hours</label>
+				</div>
+				<div class="center-label" style="">
+					<label class="center-label-top" style="">{{student.minute}}</label>
+					<div class="center-label-middle" style=""></div>
+					<label class="center-label-bottom" style="">Minutes</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="middle-right">
+			<div class="middle-right-top">
+				<img src="img/user.png">
+				<label class="login-font">登&nbsp;&nbsp;&nbsp;录</label>
+			</div>
+			<div class="middle-right-center">
+				<form name="studentForm" ng-submit="simpleLogin(studentName, studentPwd, sVrifyCode, studentForm.$valid, studentModule)" novalidate>
+					
+				    <div class='login-div'>
+				        <div class='icon'>
+				        	<img alt="" src='img/choose/user.png' draggable="false">
+				        </div>
+						<input type="text" name="studentName" class="login-input" placeholder="账号" ng-model="studentName" ng-required="true"/>
+				    </div>
+	    
+				    <div class='password-div'>
+				        <div class='icon'>
+				        	<img alt="" src='img/choose/key.png' draggable="false">
+				        </div>
+						<input type="password" name="studentPwd" class="password" placeholder="密码" ng-model="studentPwd" ng-required="true"/>
+				    </div>
+	    
+				    <div class='verification-div'>
+				        <div class='icon'>
+				        	<img alt="" class="verification-img1" src='img/choose/edit.png' draggable="false">
+				        </div>
+						<input type="text" name="sVrifyCode" class="verification-left" placeholder="验证码" ng-model="sVrifyCode"  ng-required="true"/>
+						<img title="点击刷新验证码" alt="点击刷新验证码" class="verification-img2" draggable="false" ng-click="updateVrifyCode(studentModule)" ng-src="{{studentVrifyCode}}" style="cursor: pointer;"/>
+				    </div>
+					<button type="submit" ng-disabled="studentForm.$invalid">登录</button>
+					<label class="label-left">还没有账号，<font style="text-decoration: underline;"><a href="javascript:;">马上注册</a></font></label>
+					<label class="label-right"><a href="javascript:;">忘记密码</a></label>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

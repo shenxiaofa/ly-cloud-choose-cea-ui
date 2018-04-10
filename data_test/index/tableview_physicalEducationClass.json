@@ -1,0 +1,22 @@
+{
+	"total": "1",
+	"rows": [
+		{
+			"courseNum": "F001001",
+			"courseName": "体育|",
+			"optionalClassNum": "10",
+			"courseType": "公共必修",
+			"courseProperty": "必修",
+			"openDeptName": "体育部",
+			"credit": "2"
+		}, {
+			"courseNum": "F001001",
+			"courseName": "体育||",
+			"optionalClassNum": "15",
+			"courseType": "公共必修",
+			"courseProperty": "必修",
+			"openDeptName": "体育部",
+			"credit": "2"
+		}
+	]
+}

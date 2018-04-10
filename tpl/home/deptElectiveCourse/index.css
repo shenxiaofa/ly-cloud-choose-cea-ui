@@ -1,0 +1,191 @@
+.user_info {
+	float: left;
+	margin-left: 26px;
+	width: 58%;
+	font-size: 18px;
+}
+
+.user_info li {
+	display: inline-block;
+	width: 100%;
+    text-align: left;
+}
+
+.user_info label {
+	float: left;
+}
+
+.all-left {
+	width: calc(100% - 50px);
+	background: #fff;
+	height: calc(100% + 55px);
+	margin: 0 auto;
+	float: left;
+	border-right: 1px solid #DBDBDB;
+	text-align: center;
+	position: fixed;
+	top: 62px;
+	left: 0;
+	transition: all 0.5s ease-in-out;
+	z-index: 999;
+}
+
+.all-right {
+	background: #EDF0F5;
+	width: 50px;
+	height: calc(100% + 55px);
+	margin: 0 auto;
+	float: right;
+	border-left: 1px solid #DBDBDB;
+	text-align: center;
+	position: fixed;
+	top: 62px;
+	right: 0;
+	transition: all 0.5s ease-in-out;
+	z-index: 999;
+	padding: 0;
+}
+
+.pull-right {
+	float: left !important;
+	position: relative;
+	top: 40%;
+	right: 17px;
+	transform: translateY(-50%);
+	width: 50px;
+	height: 10%;
+}
+
+.footer {
+	height: 42px;
+}
+
+.right-card {
+	width: 330px;
+    float: left;
+    padding: 5px;
+    margin: 5px 8px 5px 5px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.right-card label {
+	margin-top: 0.3rem;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+}
+
+hr {
+	width: 102%;
+	position: relative;
+	left: -10px;
+	margin-top: 0;
+	margin-bottom: 0;
+	border: 0;
+	border-top: 1px solid #eee;
+}
+
+.fa-dedent:before, .fa-outdent:before, .fa-indent:before {
+    content: ""!important;
+}
+
+.pull-right-img1 {
+    color: #666;
+    cursor: pointer;
+    position: absolute;
+    width: 40%;
+    top: 0px;
+    left: 33px;
+}
+
+.pull-right-img1 img:active{
+	content: url(../../../img/choose/personInfo-native.png);
+}
+
+.pull-right-img2 {
+    color: #666;
+    cursor: pointer;
+    position: absolute;
+    width: 50%;
+    top: 46px;
+    left: 28px;
+}
+
+.pull-right-img2 img:active{
+	content: url(../../../img/choose/selectedCourse-native.png);
+}
+
+.pull-right-img3 {
+	color: #666;
+	cursor: pointer;
+	position: absolute;
+	width: 60%;
+	top: 80px;
+	left: 26px;
+}
+
+.pull-right-img3 img:active{
+	content: url(../../../img/choose/unsuccessfulResult-native.png);
+}
+
+.all-right_wrap {
+	border-left: 1px solid #ddd;
+	margin-left: 50px;
+	height: 100%;
+	background-color: #fff;
+	overflow: auto;
+}
+
+/* 转盘进度开始 */
+
+.middle-right-center {
+	margin: 6% 0 0 26%;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 50%;
+    background: #60A8DA;
+}
+     
+.clip_left,.clip_right{
+    width:200px;
+    height:200px;
+    position: absolute;
+    top: 0px;left: 0px;
+}
+
+.circle_left, .circle_right{
+    width:200px;
+    height:200px;
+    position: absolute;
+    border-radius: 50%;
+    top: 0px;left: 0px;
+    background: #EBEBEB;
+}
+
+.circle_right,.clip_right {
+    clip:rect(0,auto,auto,100px);
+}
+
+.circle_left , .clip_left{
+    clip:rect(0,100px,auto,0);
+}
+     
+.mask {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    left: 25px;
+    top: 25px;
+    background: #FFF;
+    position: absolute;
+    text-align: center;
+    line-height: 150px;
+    font-size: 30px;
+}
+/* 转盘进度结束 */
